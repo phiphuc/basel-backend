@@ -1,0 +1,12 @@
+version: '2'
+services:
+    basel-postgresql:
+        container_name: basel-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/basel/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=basel
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
